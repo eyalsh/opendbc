@@ -1,0 +1,86 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: XXX
+
+
+BO_ 400 NEW_MSG_1: 8 XXX
+
+BO_ 512 NEW_MSG_2: 8 XXX
+
+BO_ 1268 NEW_MSG_3: 8 XXX
+
+BO_ 527 NEW_MSG_4: 8 XXX
+
+BO_ 513 ENGINE: 8 XXX
+ SG_ RPM : 7|16@0+ (1,0) [0|1] "" XXX
+
+BO_ 613 BLINKERS: 8 XXX
+ SG_ RIGHT_BLINKER : 6|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_BLINKER : 5|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1075 HVAC: 8 XXX
+ SG_ AC : 27|1@0+ (1,0) [0|1] "" XXX
+ SG_ HIGH_BEAM : 30|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 656 DIGITAL_DISPLAY_1: 8 XXX
+ SG_ DISPLAY_CHAR_0 : 15|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_1 : 23|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_2 : 31|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_3 : 39|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_4 : 47|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_5 : 55|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_6 : 63|8@0+ (1,0) [0|1] "" XXX
+
+BO_ 657 DIGITAL_DISPLAY_2: 8 XXX
+ SG_ DISPLAY_CHAR_5 : 15|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_6 : 23|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_7 : 31|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_8 : 39|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_9 : 47|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_10 : 55|8@0+ (1,0) [0|1] "" XXX
+ SG_ DISPLAY_CHAR_11 : 63|8@0+ (1,0) [0|1] "" XXX
+
+BO_ 672 HVAC: 8 XXX
+ SG_ CIRCULATION : 6|2@0+ (1,-1) [0|1] "" XXX
+ SG_ AC_TEMP_HALF : 23|8@0+ (1,0) [0|1] "" XXX
+ SG_ FAN_SPEED : 30|4@0+ (1,0) [0|8] "" XXX
+ SG_ AC_TEMP : 15|8@0+ (1,0) [15|29] "" XXX
+
+
+
+
+CM_ SG_ 672 CIRCULATION "Inside or outside circuation";
+CM_ SG_ 672 AC_TEMP_HALF "Whether it's .0 or 0.5";
